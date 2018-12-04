@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .son{
+            float: left;
+            border:1px solid red;
+            box-sizing:border-box;
+        }
+        @media all and (min-width:800px){
+            .son{
+                width: 25%;
+                height: 200px;
+                background: black;
+            }
+        }
+        @media all and (min-width:400px) and (max-width:799px){
+            .son{
+                width: 50%;
+                height: 400px;
+                background: pink;
+            }
+        }
+        @media all and (max-width:399px){
+            .son{
+                width: 100%;
+                height: 300px;
+                background: yellow;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="son"></div>
+    <div class="son"></div>
+    <div class="son"></div>
+    <div class="son"></div>
+</body>
+</html>

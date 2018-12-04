@@ -1,0 +1,429 @@
+*{
+    margin: 0;
+    padding:0;
+}
+.header{
+    width: 1204px;
+    margin: 0 auto;
+}
+.header .hot{
+    background: url(../image/logo.png) no-repeat left top;
+    display: inline-block;
+    width: 176px;
+    height: 52px;
+    text-indent: 176px;
+    background-size: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-top:16px;
+    
+}
+.header .hot,.body,.center,.end{
+    float: left;
+}
+.header .hot,.body>li{
+    float: left;
+    font-size: 14px;
+    color: #2a2a2a;
+}
+.header .body{
+    margin-top:39px;
+    margin-left: 85px;  
+}
+.header .body>li{
+    margin-left: 40px;
+}
+.header .center{
+    width: 73px;
+    margin-top:39px;
+    margin-left: 110px;
+    font-size: 14px;
+    color: #666767;
+}
+.header .center>span{
+    padding-left: 30px;
+}
+.header .center>span{
+    background: url(../image/buy.png) no-repeat left center;
+}
+.header .end{
+    margin-top:39px;
+    margin-left: 40px;
+}
+.header .end>a{
+    margin-left: 25px;
+    font-size: 14px;
+    color: #666767;
+}
+.header .body li:hover a{
+    color: #2b7dd1;
+}
+.header .center>span:hover{
+    background-image: url(../image/bluecar.png);
+}
+.header .end a:hover{
+    color: #2b7dd1;
+}
+.header .center .centerpp{
+    width: 360px;
+    height: 440px;
+    /* border: 1px solid red; */
+    margin-left: -175px;
+}
+.header .center .centerpp .pp{
+    line-height: 54px;
+    border-bottom: 1px solid #e1e1e1;
+    margin-left: 22px;
+    font-size: 16px;
+    color: #333333;
+}
+.header .center .centerpp .pp>span{
+    float: right;
+    margin-right: 17px;
+    font-size: 12px;
+    color: #7d7d7d;
+}
+.header .center .centerpp .centertop{
+    height: 210px;
+    background: url(../image/hao.png) no-repeat 140px 60px;
+    border-bottom: 1px solid #e1e1e1;
+}
+.header .center .centerpp .centertop>p{
+       margin-left: 120px;
+       padding-top: 156px;
+    }
+.header .center .centerpp>p{
+        margin-left: 104px;
+        line-height: 64px;
+        padding-bottom:24px;
+        
+}
+.header .center .centerpp .centerend span{
+    float: right;
+    padding-right:15px;
+    font-size: 12px;
+}
+.header .center .centerpp .centerend{
+    font-size: 12px;
+    color: #7d7d7d;
+    border-top: 1px solid #e1e1e1;
+    line-height: 58px;
+    margin-left: 23px;
+}
+.header .center .centerpp{
+    display: none;
+}
+.header .center:hover .centerpp{
+    display: block;
+}
+.header .center .centerpp{
+    background:url(../image/blankcar.png) no-repeat;
+}
+/**以下为图片区域*/
+.pen{
+    width: 1204px;
+    height: 360px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    margin-top:15px;
+    /* border:1px solid red; */
+}
+.pen .penp {
+    width: 4816px;
+    background: 100%;
+    z-index: -1;
+}
+.pen .penp>li{
+    float: left;
+}
+.pen .penpb{
+    width: 240px;
+    height: 360px;
+    position: absolute;
+    top:0;
+    left:0;
+    background-color:rgba(2, 0, 0, .2);
+    /* border:1px solid red; */
+}
+.pen .penpb>li span{
+    line-height: 70px;
+    color: #fdfdfe;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(255,255,255,.44);
+    background: url(../image/copy.png) no-repeat 181px center;
+    display: block;
+    width: 180px;
+    padding:0 8px 0 10px;
+    margin-left:24px;
+}
+/**以下为分类目录**/
+.pen .penpb .boder{
+    width: 575px;
+    position: absolute;
+    left: 208px;
+    top:0;
+    margin-left: 33px;
+    padding-left:33px;
+    background: url(../image/text.jpg) no-repeat left;
+}
+.pen .penpb .boder>h4{
+    color: #0b0b0b;
+    font-size: 16px;
+    margin-top:24px;
+    line-height: 34px;
+
+}
+.pen .penpb .boder>.boderd{
+    color: #4a4b4b;
+    font-size: 16px;
+    line-height: 38px;
+    margin-bottom: 36px;
+}
+.pen .penpb .boder{
+    display: none;
+}
+.pen .penpb>li:hover .boder{
+    display: block;
+}
+.pen .penpb>li:hover{
+    background: rgba(11, 11, 11, .3);
+}
+.pen .penpb>li:last-child span{
+    border:none;
+}
+/**以下为购物图**/
+.pheader{
+    width: 1204px;
+    margin: 0 auto;
+    margin-top:20px;
+}
+.pheader>h3{
+    font-size:16px;
+    color: #2d2d2d;
+    line-height: 56px;
+}
+.pheader .pbody{
+    width: 250px;
+    height: 185px;
+    /* background-: url(../image/shop1.png) no-repeat left top; */
+    position: relative;
+}
+.pheader .pbody .pwrite{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #fff;
+    background-size:100%;
+    width: 259px;
+    padding-top:20px;
+}
+.pheader .pbody .pwrite>h4{
+    font-size:14px;
+    color: #1e1e1e;
+    padding-left: 16px;
+}
+.pheader .pbody .pwrite>p{
+    font-size:12px;
+    color: #9e9d9d;
+    padding-left: 16px;
+}
+.pheader .pbody .pwrite p{
+    display: none; 
+}
+.pheader .pbody:hover .pwrite>p{
+    display: block;
+}
+.pheader .pbody .pwrite>div{
+    font-size: 12px;
+    color: #c71b1b;
+    padding-left:16px;
+    line-height: 42px;
+}
+.pheader .pbody .pwrite .endwrite{
+    float:right;
+    font-size: 12px;
+    color: #868484;
+    margin-right: 12px;
+}
+.pheader .pbody{
+    display: inline-block;
+}
+.pheader{
+    font-size: 0;
+}
+.pheader>.endjuli{
+    margin-left:68px;
+}
+.tou{
+    background: #f3f5f7;
+}
+.tou .much{
+    width: 1204px;
+    margin: 0 auto;
+    padding-top:30px;
+}
+.tou .much .more1{
+    width:224px; 
+    background: url(../image/Java.png) no-repeat left top;
+    margin-left:13px;
+}
+.tou .much .more1 h2{
+    line-height: 35px;
+    font-size: 30px;
+    color: #fefdfd;
+    margin-top:26px;
+    margin-left:15px;
+}
+.tou .much .more1 p{
+    color: #fefdfd;
+    font-size: 14px;
+    margin-top:36px;
+    margin-left:15px;
+}
+.tou .much .more1 p span{
+    margin-left: 13px;
+}
+.tou .much .more1 ul>li{
+    line-height: 28px;
+    padding-left: 26px;
+}
+.tou .much .more1 ul{
+    margin-top:126px;
+    margin-bottom:40px;
+}
+.tou .much .more1 ul>li{
+    color: #01639b;
+    font-size: 12px;
+}
+.tou .much .more1,.tou .much .more2,.tou .much .psd,.tou .much .headhtml{
+    float: left;
+}
+.tou .much .more2{
+    width: 400px;
+    margin-left:13px;
+}
+.tou .much .more2 .small1{
+    background-size:100%;
+    background: url(../image/java2.png) no-repeat left top;
+    font-size: 21px;
+    color: #fefdfd;
+    padding: 90px 74px 70px 50px;
+}
+.tou .much .more2 .small2{
+    background-size:100%;
+    background: url(../image/java7.png) no-repeat left top;
+    font-size: 21px;
+    color: #fefdfd;
+    padding: 90px 74px 70px 50px;
+}
+.tou .psd{
+    width: 253px;
+    margin-left:13px;
+}
+.tou .psd .bodypsd{
+    position: relative;
+    height: 185px;
+
+}
+.tou .psd .bodypsd .centerpsd {
+    position: absolute;
+    left: 0;
+    bottom:0;
+    background: #fff;
+    width:254px;
+    padding-top:9px;
+}
+.tou .psd .bodypsd .centerpsd>h4{
+    font-size: 14px;
+    color: #1e1e1e;
+    line-height: 22px;
+    padding-left: 18px;
+}
+.tou .psd .bodypsd .centerpsd>.hotpsd{
+    font-size: 12px;
+    color: #9e9d9d;
+    padding-left: 18px;
+    /* margin-top:9px; */
+    display: none;
+}
+.tou .psd .bodypsd .centerpsd .endpsd{
+    font-size: 12px;
+    color: #c71b1b;
+    margin-top:21px;
+    line-height:21px;
+    margin-bottom:15px;
+    margin-left: 16px;
+
+}
+.tou .psd .bodypsd .centerpsd .endpsd>span{
+    font-size: 12px;
+    color: #9e9d9d;
+    float: right;
+    margin-right:26px;
+}
+.tou .psd .bodypsd .centerpsd:hover .hotpsd{
+    display: block;
+}
+.tou .headhtml{
+    width: 251px;
+    height: 380px;
+    position: relative;
+    margin-left:13px;
+}
+.tou .headhtml .bodyhtml>h4{
+    color: #1e1e1e;
+    font-size:16px;
+    line-height: 24px;
+    margin-top:20px;
+    margin-left:24px;
+    padding-right: 20px;
+}
+.tou .headhtml .bodyhtml .centerhtml{
+    margin-left:24px;
+    margin-top:12px;
+    border-bottom:1px solid #e1e1e1;
+    margin-right:21px;
+    line-height:25px;
+    padding-bottom:4px;
+}
+.tou .headhtml .bodyhtml .centerhtml>span{
+    padding-left:6px;
+}
+.tou .headhtml .bodyhtml{
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top:73px;
+    width: 254px;
+    color: #7b7b7b;
+    font-size:12px;
+}
+.tou .headhtml .bodyhtml .endhtml{
+    margin-top:11px;
+}
+.tou .headhtml .bodyhtml .endhtml .foothtml>li{
+    line-height:30px;
+    margin-left: 27px;
+    color: #1e1e1e;
+    font-size: 12px;
+}
+.tou .headhtml .bodyhtml .endhtml .foothtml{
+    margin-bottom: 25px;
+}
+.tou .headhtml .bodyhtml>h4::first-letter{
+    font-size: 16px;
+    color: #fefbfb;
+    background-color: #b7b7b7;
+}
+.tou .headhtml .bodyhtml h4>span{
+    padding-right: 8px;
+}
+.tou .headhtml .bodyhtml .endhtml .foothtml li::before{
+    content: "";
+    display: inline-block;
+    background: url(../image/fine7.png) no-repeat left top;
+    width: 5px;
+    height: 5px;
+    /* background-color: red; */
+}

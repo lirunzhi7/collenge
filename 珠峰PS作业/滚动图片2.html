@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .header{
+            width: 1204px;
+            font-size: 0;
+            margin: 0 auto;
+           overflow: hidden;
+           position: relative;
+            
+        }
+        .header .body li{
+            float: left;
+            list-style: none;
+            white-space: nowrap;
+        }
+        .header .body{
+            width: 4816px;
+        }
+        .header .num{
+            position:absolute;
+            font-size:14px;
+            color: #fdfdfe;
+            width: 205px;
+            left: 0;
+            top: 0;
+            background: rgba(2,0,0,.2);
+            padding-right: 33px;
+            
+            
+        }
+        .header .num li{
+            border-bottom: 1px solid rgba(255, 255, 255, .44); 
+            line-height: 72px;
+            padding-left:35px;
+            background:url(image/copy.png) no-repeat 90% center;
+        }
+        .header .num li .end ul{
+            list-style: none;
+        }
+        .header .num li .end{
+            position: absolute;
+            width: 500px;
+            left: 240px;
+            top:0;
+            background: url(image/text.jpg) no-repeat;
+        }
+        .header .num li .end h4{
+            line-height: 72px;  
+            color:#0b0b0b;
+            font-size:16px;
+            padding-left: 33px;
+        }
+        .header .num li .end ul li{
+            line-height: 41px; 
+            color: #4a4b4b;
+            list-style: none;
+            background: none;
+        }
+        .header .num li:hover>div{
+            display: block;
+        }
+        .header .num li div{
+            display: none;
+        }
+        .header .num li:hover{
+            background-color: rgba(11, 11, 11, .2);
+        }
+        .header .num>li{
+            margin-left: 30px;
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <ul class="body">
+            <li><img src="image/banner1.jpg" alt=""></li>
+            <li><img src="image/banner2.jpg" alt=""></li>
+            <li><img src="image/banner3.jpg" alt=""></li>
+            <li><img src="image/banner4.jpg" alt=""></li>
+        </ul>
+        <ul class="num">
+            <li>JavaScript免费基础课
+                <div class="end">
+                <h4>分类目录1</h4>
+                <ul>
+                    <li><span>1、基本语句</span></li>
+                    <li><span>2、基础理论精讲之值类型</span></li>
+                    <li><span>3、基础理论精讲之对象类型</span></li>
+                    <li><span>4、基础理论精讲之函数类型</span></li>
+                    <li><span>5、选项卡精讲</span></li>
+                    <li><span>6、DOM基础</span></li>
+                    <li><span>7、数学方法和日期类型</span></li>
+                </ul>
+                </div>  
+            </li>
+            <li>JS+H5移动端课程
+                <div class="end">
+                <h4>分类目录</h4>
+                <ul>
+                    <li>1、基本语句</li>
+                    <li>2、基础理论精讲之值类型</li>
+                    <li>3、基础理论精讲之对象类型</li>
+                    <li>4、基础理论精讲之函数类型</li>
+                    <li>5、选项卡精讲</li>
+                    <li>6、DOM基础</li>
+                    <li>7、数学方法和日期类型</li>
+                </ul>
+                </div>  
+            </li>
+            <li>JS课程按模块分类</li>
+            <li>CSS前端开发课程</li>
+            <li>Node全栈工程师</li>
+        </ul>
+    </div>
+</body>
+</html>

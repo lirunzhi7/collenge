@@ -1,0 +1,191 @@
+.logo{
+    height: 1.31rem;
+    width: 100%;
+    background: #2a2a2a;
+    overflow: hidden;
+}
+.logo>h1{
+    width: 2.5rem;
+    height: .77rem;
+    background: url(../image/logo.png) no-repeat left top; 
+    font-size:.4rem;
+    background-size:2.5rem .77rem;
+    text-indent: 2.5rem;
+    white-space:nowrap;
+    overflow: hidden;
+    margin-top: .26rem;
+    margin-left: .16rem;
+    float: left;
+}
+.logo span{
+    float: right;
+    color: #fff;
+   
+}
+@font-face{
+    src:url(../font/iconfont.ttf);
+    font-family: tty;
+}
+.icon{
+    font-family: tty;
+    display: block;
+    font-size: .43rem;
+    padding-top: .46rem;
+    padding-right: .27rem;
+}
+.icon-santiaoxian::after{
+    content:"\e601"; 
+}
+.banner{
+    width: 100%;
+    overflow: hidden;
+
+}
+.banner ul{
+    width: 400%;
+    height: 4rem;
+}
+.banner ul li{
+    width: 100%;0
+}
+.banner ul li img{
+    width: 25%;
+    float: left;
+}
+.top .body ul li{
+    width: .19rem;
+    height: .19rem;
+    border-radius: 50%;
+    background: #f3f5f7;
+    /* border: 1px solid red; */
+    float: left;
+}
+.top .banner{
+    position: relative;
+}
+.top .body ul{
+    position: absolute;
+    left:50%;
+    top:4.93rem;
+    margin-left: -.38rem;
+}
+.top .body ul li{
+    margin-left:.09rem;
+}
+.top .body ul li:first-child {
+    margin-left:0;
+}
+.center span{
+    float: left;
+    display: block;
+    font-size:.4rem;
+}
+.center h4{
+    font-size: .33rem;
+    color: #4c4b4b;
+    float: left;
+    padding-left: .17rem;
+}
+@font-face{
+    src:url(../font/iconfont.ttf);
+    font-family: tt;
+}
+.center{
+    font-family: tt;
+    margin-left:.22rem;
+    margin-top:.4rem;
+}
+.center .icon-shu::before{
+    content: "\e605";
+} 
+.picture{
+    width: 100%;
+    margin-top:.35rem;
+}
+.picture .pen li>div{
+    width: 7.12rem;
+    height: 3.27rem;
+    background: url(../image/1.png) no-repeat center center;
+    background-size: cover;
+    margin-left: .22rem;
+}
+.picture .pen li>h4{
+    color: #777777;
+    font-size: .33rem;
+    padding-top:.4rem;
+    text-align: center;
+}
+.picture .computer li>div{
+    width: 7.24rem;
+    height: 3.7rem;
+}
+.picture .computer li>div img{
+    width: 7.24rem;
+    height: 3.7rem;
+    background-size: cover;
+}
+.picture .computer>li{
+    width: 7.24rem;
+    height: 5.4rem;
+    background-size:cover;
+    margin-left: .17rem;
+}
+.picture .computer li h4{
+    color: #777777;
+    font-size: .33rem;
+    margin-top:.35rem;
+    text-align: center;
+}
+.picture .computer li p{
+    color: #ed3a3a;
+    font-size: .33rem;
+    text-align: center;
+    margin-top:.25rem;
+}
+.end ul li{
+    color: #188ae4;
+    font-size:.19rem;
+    float: left;
+}
+@font-face{
+    src: url(../font/iconfont.ttf);
+    font-family: xing;
+}
+.end ul li>.tfboy{
+    font-family: xing; 
+}     
+.end ul li .icon-xingqiu::before{
+    content: "\e600";
+    font-size:.55rem
+}
+@font-face{
+    src: url(../font/iconfont.ttf);
+    font-family: hang;
+}
+.end ul li>.second{
+    font-family:hang
+}
+.end ul li .icon-icon-liangzi::before{
+    content:"\e645";
+    font-size:.55rem
+}
+@font-face{
+    src: url(../font/iconfont.ttf);
+    font-family: chifan;
+}
+.end ul li>.third{
+    font-family:chifan
+}
+.end ul li .icon-xiaolian::before{
+    content:"\e63a";
+    font-size:.55rem
+}
+.end>ul{
+    margin-left: 1rem;
+}
+.end .pp{
+    padding-left: 1.8rem;
+}
+.end .kk{
+    padding-left: 1.75rem
+}

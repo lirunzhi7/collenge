@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        ul{
+            position: fixed;
+            left: 0;
+            top:50%;
+            transform: translateY(-50%);
+        }
+        ul li{
+            width: 150px;
+            line-height: 50px;
+            background: black;
+            border-bottom: 1px solid #fff;
+            text-align: center;
+        }
+        ul li a{
+            color: #fff;
+            text-decoration: none;
+        }
+        div{
+            height: 400px;
+        }
+        div:target{
+            border: 10px solid #000;
+        }
+        #yellow{
+            background: yellow;
+        }
+        #red{
+            background: red;
+        }
+        #green{
+            background: green;  
+        }
+        #blue{
+            background: blue;
+        }
+        #pink{
+            background:pink;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#yellow">黄色</a></li>
+        <li><a href="#red">红色</a></li>
+        <li><a href="#green">绿色</a></li>
+        <li><a href="#blue">蓝色</a></li>
+        <li><a href="#pink">粉色</a></li>
+    </ul>
+    <div id="yellow"></div>
+    <div id="red"></div>
+    <div id="green"></div>
+    <div id="blue"></div>
+    <div id="pink"></div>
+</body>
+</html>

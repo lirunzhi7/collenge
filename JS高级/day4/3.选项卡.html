@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    ul{
+        list-style: none;
+        overflow: hidden;
+        position: relative;
+        top:1px;
+    }
+    #box{
+        width: 400px;
+        margin: 100px auto;
+    }
+    li{
+        width: 40px;
+        padding: 0 10px;
+        border: 1px solid black;
+        float: left;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 20px;
+        margin-right: 10px;
+    }
+
+    #box div{
+        width: 400px;
+        line-height: 200px;
+        border: 1px solid black;
+        text-align: center;
+        display: none;
+        font-size: 30px;
+    }
+    #box ul .activ{
+        background: blue;
+    }
+    #box div.activ{
+        display: block;
+        background: yellow;
+       
+    }
+</style>
+<body>
+    <div id="box">
+        <ul>
+            <li class="activ">吃饭</li>
+            <li>睡觉</li>
+            <li>学习</li>
+        </ul>
+        <div class="activ">牛肉</div>
+        <div>两小时</div>
+        <div>做饭</div>
+    </div>
+    
+<script>
+    var lis = document.querySelectorAll('li')
+    var divs = document.querySelectorAll('#box div')
+    // function fn(n) {
+    //     for (var i = 0; i < lis.length; i++) {
+    //         lis[i].className=''
+    //         divs[i].className=''
+    //     }
+    //     lis[n].className='activ'
+    //     divs[n].className='activ'
+    // }
+    // for (var i = 0; i < lis.length; i++) {
+    //     lis[i].ppp=i
+    //     lis[i].onclick=function(){
+    //         fn(this.ppp)
+    //     }
+    // }
+
+
+    //闭包1
+    // for (var i = 0; i < lis.length; i++) {
+    //     lis[i].onclick=(function(i){
+    //         return function(){
+    //             for (var k = 0; k < lis.length; k++) {
+    //             lis[k].className=''
+    //             divs[k].className=''
+    //         }    
+    //             lis[i].className='activ'
+    //             divs[i].className='activ'
+    //         }
+    //     })(i)
+    // }
+    //闭包2
+    // for (var i = 0; i < lis.length; i++) {
+    //     (function(i){
+    //         lis[i].onclick=function(){
+    //             for (var k = 0; k < lis.length; k++) {
+    //                 lis[k].className=''
+    //                 divs[k].className=''
+    //             }
+    //             lis[i].className='activ'
+    //             divs[i].className='activ'
+    //         }
+    //     })(i)
+    // }
+    //let
+    // for (let i = 0; i < lis.length; i++) {
+    //     lis[i].onclick=function(){
+    //         for (var k = 0; k < lis.length; k++) {
+    //         lis[k].className=''
+    //         divs[k].className=''
+    //     }
+    //         lis[i].className='activ'
+    //         divs[i].className='activ'
+    //     }
+    // }
+
+
+
+
+    
+</script>
+</body>
+</html>

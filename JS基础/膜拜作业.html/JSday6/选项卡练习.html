@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        ul{
+            list-style: none;
+            position: relative;
+            top:1px;
+        }
+        ul li{
+            display: inline-block;
+            border: 1px solid black;
+            line-height: 30px;
+            padding:0 10px;
+            margin-left:8%;
+            cursor: pointer;
+        }
+        #contai{
+            width: 400px;
+            margin:80px auto;
+        }
+        #contai div{
+            width: 100%;
+            line-height: 200px;
+            border: 1px solid black;
+            text-align: center;
+            display: none;
+        }
+        #contai div.active{
+            display: block;
+        }
+        #contai ul .active{
+            border-bottom-color: #FFF;
+            font-weight: bold;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="contai">
+        <ul>
+            <li class="active">电影</li>
+            <li>音乐</li>
+            <li>话剧</li>
+            <li>音乐剧</li>
+        </ul>
+        <div class="active">电影</div>
+        <div>音乐</div>
+        <div>话剧</div>
+        <div>音乐剧</div>
+    </div>
+</body>
+<script src="数组重复删除和冒泡.js"></script>
+</html>

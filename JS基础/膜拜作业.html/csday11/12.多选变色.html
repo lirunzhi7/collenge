@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        input{
+            display: none;
+        }
+        label{
+            width: 30px;
+            height: 30px;
+            border: 1px solid black;
+            border-radius: 10px;
+            display: inline-block;
+            background: url(gou1.png) no-repeat center center;
+            background-size:20px;
+            vertical-align: middle;
+
+        }
+        input:checked+label{
+            background-image: url(gou2.png);
+            border-color: #d81e06;
+            border: 1px solid #d81e06;
+        }
+    </style>
+</head>
+<body>
+    喜欢吃的水果：
+    <input id="apper" type="checkbox" name="#" >
+    <label for="apper"></label>苹果
+    <input id="big" type="checkbox" name="#" >
+    <label for="big"></label>西瓜
+    <input id="small" type="checkbox" name="#">
+    <label for="small"></label>芒果
+    <input id="top" type="checkbox" name="#" >
+    <label for="top"></label>火龙果
+</body>
+</html>

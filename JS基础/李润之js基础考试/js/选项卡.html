@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        #box{
+            width: 500px;
+            margin: 80px auto;
+        }
+        ul{
+            list-style: none;
+            position: relative;
+            top:1px;
+        }
+        ul li{
+            display: inline-block;
+            border: 1px solid black;
+            padding: 0 10px;
+            font-size: 18px;
+            cursor: pointer;
+            margin-left: 15%;
+        }
+        #box div{
+            line-height: 298px;
+            border: 1px solid red;
+            text-align: center;
+            display: none;
+            background: yellow;
+            font-size: 20px;
+        }
+        #box ul li.activ{
+            color: blue;
+            font-weight: bold;
+            border-bottom-color: #fff;
+        }
+        #box div.activ{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="box">
+        <ul>
+            <li class="activ">娱乐</li>
+            <li>八卦</li>
+            <li>事件</li>
+        </ul>
+        <div class="activ">小宝最帅</div>
+        <div>小宝恋爱了</div>
+        <div>居然和饭团这只小狗</div>
+    </div>
+</body>
+<script src="changgeTab.js"></script>
+</html>

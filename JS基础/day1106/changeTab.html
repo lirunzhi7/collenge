@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #container {
+            width: 400px;
+            height: 400px;
+            margin-left: 30%;
+            margin-top: 100px;
+            overflow: hidden;
+            border: 1px solid pink
+        }
+        ul {
+            list-style: none;
+            height: 39px;
+            padding: 0;
+            margin: 0;
+            border-bottom: 1px solid pink
+        }
+        li {
+            float: left;
+            width: 99px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            margin: 0;
+            border-right: 1px solid pink;
+            cursor: pointer;
+        }
+        li:nth-last-child(1) {
+            border: 0;
+            width: 100px
+        }
+        #container div {
+            height: 360px;
+            text-align: center;
+            line-height: 230px;
+            font-size: 30px;
+            color: maroon;
+            display: none;
+        }
+        #container li.active {
+            background: lightblue;
+
+        }
+        #container div.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <ul>
+            <li class="active">电影</li>
+            <li>音乐</li>
+            <li>话剧</li>
+            <li>花花</li>
+        </ul>
+        <div class="active">电影</div>
+        <div>音乐</div>
+        <div>话剧</div>
+        <div>花花</div>
+    </div>
+    <script src="./js/changeTab.js"></script>
+</body>
+</html>

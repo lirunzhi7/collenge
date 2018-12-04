@@ -1,0 +1,84 @@
+<!DOCTYPE html><html><head><title>第十天</title><meta charset='utf-8'><link href='https://cdn.maxiang.io/res-min/themes/marxico.css' rel='stylesheet'><style>
+.note-content  {font-family: 'Helvetica Neue', Arial, 'Hiragino Sans GB', STHeiti, 'Microsoft YaHei', 'WenQuanYi Micro Hei', SimSun, Song, sans-serif;}
+
+</style></head><body><div id='preview-contents' class='note-content'>
+                        
+                    
+
+
+
+<h1 id="第十天">第十天</h1>
+
+<h2 id="html5新增标签">HTML5新增标签</h2>
+
+<table><tbody><tr style="font-weight:bold">  <td>标签名</td>  <td>描述</td></tr><tr>  <td>header</td>  <td>定义头部</td></tr><tr>  <td>footer</td>  <td>定义尾部</td></tr><tr>  <td>nav</td>  <td>定义导航</td></tr><tr>  <td>section</td>  <td>定义大区块</td></tr><tr>  <td>article</td>  <td>定义文章</td></tr><tr>  <td>aside</td>  <td>侧边栏</td></tr><tr>  <td>details</td>  <td>文档详情 谷歌和safari浏览器支持</td></tr><tr>  <td>summary</td>  <td>定义details的标题 谷歌和safari浏览器支持</td></tr><tr>  <td>mark</td>  <td>标记 行内元素</td></tr><tr>  <td>figure</td>  <td>配图说明</td></tr><tr>  <td>figcaption</td>  <td>配图详情</td></tr><tr>  <td>audio</td>  <td>音频</td></tr><tr>  <td>video</td>  <td>视频</td></tr></tbody></table>
+
+<p><strong>audio/video常用属性</strong></p>
+
+<ul><li>行内块元素</li>
+<li>src 音视频的路径</li>
+<li>controls 控制条的显示隐藏</li>
+<li>autoplay 自动播放</li>
+<li><code>loop == loop="loop"</code>循环播放</li>
+</ul>
+
+
+
+<h2 id="html5新增表单类型">HTML5新增表单类型</h2>
+
+<ul><li><code>input</code> type <br>
+<ul>
+<li><code>type="text"</code> 文本输入框</li>
+<li><code>type="password"</code> 密码框</li>
+<li><code>type="radio"</code> 单选按钮</li>
+<li><code>type="checkbox"</code> 多选按钮</li>
+<li><code>type="submit"</code> 提交按钮</li>
+<li><code>type="reset"</code> 重置按钮</li>
+<li><code>type="button"</code> 普通按钮</li></ul></li>
+<li><code>textarea</code> 文本域</li>
+<li><code>select</code> 下拉列表</li>
+<li><code>option</code> 列表项</li>
+<li><code>label</code> 可以于表单元素进行关联</li>
+</ul>
+
+<p><strong>新增的type值</strong></p>
+
+<ul><li><code>type=date</code>  年月日 日期</li>
+<li><code>number</code> 数字</li>
+<li><code>tel</code> 电话</li>
+<li><code>range</code> 滑动条</li>
+<li><code>email</code> 邮件</li>
+<li><code>time</code> 时间</li>
+</ul>
+
+<h2 id="css3新增属性">CSS3新增属性</h2>
+
+<ul><li><code>border-radius</code> 圆角 <br>
+<ul>
+<li>值：可以为具体数值，可以为百分比</li></ul></li>
+<li><code>box-shadow</code> 盒子阴影 <br>
+box-shadow: x轴方向阴影 y轴方向阴影 阴影模糊度  阴影的外延值 阴影颜色 inset; </li>
+</ul>
+
+<pre class="prettyprint hljs-dark"><code class="hljs scss"><div class="hljs-line"><span class="hljs-comment">/* </span>
+</div><div class="hljs-line"><span class="hljs-comment">   box-shadow: x y blur 阴影大小 颜色 inset;</span>
+</div><div class="hljs-line"><span class="hljs-comment">   x轴值为正阴影在右侧，值为负 阴影在左侧</span>
+</div><div class="hljs-line"><span class="hljs-comment">   y轴值为正阴影在下方，值为负 阴影在上方</span>
+</div><div class="hljs-line"><span class="hljs-comment">   blur 模糊度，值越大越模糊，为0 不模糊 ，但是值不可以为负数</span>
+</div><div class="hljs-line"><span class="hljs-comment"></span>
+</div><div class="hljs-line"><span class="hljs-comment"> */</span>
+</div><div class="hljs-line"> -webkit-<span class="hljs-attribute">box-shadow</span>: <span class="hljs-number">0px</span> <span class="hljs-number">0px</span> <span class="hljs-number">3px</span> <span class="hljs-number">3px</span> <span class="hljs-number">#000</span>;
+</div><div class="hljs-line"> -o-<span class="hljs-attribute">box-shadow</span>:<span class="hljs-number">0px</span> <span class="hljs-number">0px</span> <span class="hljs-number">3px</span> <span class="hljs-number">3px</span> <span class="hljs-number">#000</span>;
+</div><div class="hljs-line"> <span class="hljs-attribute">box-shadow</span>: <span class="hljs-number">0px</span> <span class="hljs-number">0px</span> <span class="hljs-number">3px</span> <span class="hljs-number">3px</span> <span class="hljs-number">#000</span>;
+</div></code></pre>
+
+<ul><li><code>box-sizing</code> <br>
+<ul>
+<li>怪异盒模型 <br>
+<ul>
+<li>默认值<code>content-box</code> 不包含padding和border</li>
+<li><code>border-box</code>宽高是包含padding和border的</li></ul></li></ul></li>
+<li><code>text-shadow</code> 文本阴影 <br>
+<ul>
+<li>text-shadow: x轴方向的阴影 y轴方向的阴影 模糊度  阴影的颜色;</li></ul></li>
+</ul></div></body></html>

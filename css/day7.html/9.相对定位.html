@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            background: red;
+            /*相对定位 没有脱离文档流
+            根据本身为参照物进行移动*/
+            position: relative;
+            left:40px;
+            top:50px;
+            /* z-index: -10; */
+            /*控制图片的浮现*/
+        }
+        p{
+            width: 400px;
+            height: 400px;
+            background:yellow;
+            
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <p></p>
+</body>
+</html>

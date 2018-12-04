@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+<body>
+<ul id="box">
+    
+</ul>
+
+<script>
+    //1.DOM回流  
+    //DOM回流：当页面中的元素的大小，位置发生改变，
+    //会引起浏览器对其他盒子的位置进行重新计算，那么这样会引发DOM回流，这样是很消耗浏览器的性能的
+    //所以就用文档碎片 createDocumentFragment
+    // var box = document.getElementById('box')
+    // var ary = ['知识就是力量','让我们荡起双桨','起来不愿意做奴隶的人民']
+    // for (var i = 0; i < ary.length; i++) {
+    //     var cur = ary[i]
+    //     var lis = document.createElement('li')
+    //     lis.innerHTML=cur
+    //     box.appendChild(lis)
+    // }
+    
+
+    //解决DOM回流 问题
+    //方法一
+    // var box = document.getElementById('box')
+    // var ary = ['知识就是力量','让我们荡起双桨','起来不愿意做奴隶的人民']
+    // var str = ''
+    // for (var i = 0; i < ary.length; i++) {
+    //     var cur = ary[i]
+    //     var lis = document.createElement('li')
+    //     str += '<li>'+cur+'</li>'
+    //     lis.innerHTML=str
+    // }
+    // box.appendChild(lis)//此方法会产生DOM回流增加服务器负担
+    // //(相当于再给页面一个个家元素，每加一个元素一下的内容就会运行一次)
+    //方法二
+    // var box = document.getElementById('box')
+    // var ary = ['知识就是力量','让我们荡起双桨','起来不愿意做奴隶的人民']
+    // var frg = document.createDocumentFragment()
+    // for (var i = 0; i < ary.length; i++) {
+    //     var cur  =ary[i]
+    //     var lis = document.createElement('li')
+    //     lis.innerHTML = cur
+    //     frg.appendChild(lis)
+    // }
+    // box.appendChild(frg)
+    // frg = null
+
+    //方法三（es6的模板字符串）
+    // var box = document.getElementById('box')
+    // var ary = ['知识就是力量','让我们荡起双桨','起来不愿意做奴隶的人民']
+    // var str = ''
+    // for (var i = 0; i < ary.length; i++) {
+    //     var cur = ary[i]
+    //     str += `<li>${cur}</li>`
+    //     var lis = document.createElement('li')
+    //     lis.innerHTML=str
+    // }
+    // box.appendChild(lis)
+
+    
+    //将类数组转变为数组（考虑到兼容性的做法）
+    // var utils = (function () {
+    // function toArray(likeAry) {
+    //     var ary = [];
+    //     try{
+    //         ary = Array.prototype.slice.call(likeAry)
+    //     }catch (e){
+    //         console.log(e)
+    //         for(var i=0;i<likeAry.length;i++){
+    //             var  cur = likeAry[i];
+    //             ary.push(cur);
+    //         }
+    //     }
+    //     return ary;
+    // }
+    // return {
+    //     toArray:toArray
+    // }
+    // })()
+    
+
+
+
+
+
+
+
+
+    
+
+    //2.DOM的重绘：
+
+    //3.字符串拼接
+    // var str = ''
+    // for (var i = 0; i < ary.length; i++) {
+    //     var cur = ary[i]
+    //     str += '<li>'+cur+'</li>'
+    // }
+    // box.innerHTML=str
+
+
+    //4.es6的模板字符串
+    // var str = ''
+    // for (var i = 0; i < ary.length; i++) {
+    //     var cur = ary[i]
+    //     str +=`<li>${cur}
+    //         <div>8888888</div>
+    //         </li>`
+    // }
+    // box.innerHTML=str
+    
+</script>
+</body>
+
+</html>

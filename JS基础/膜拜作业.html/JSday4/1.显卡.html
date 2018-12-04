@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+        }
+        .tabBox{
+            width: 500px;
+            margin:40px auto;
+        }
+        .tabBox ul{
+            position: relative;
+            top:1px;
+        }
+        .tabBox ul li{
+            display: inline-block;
+            padding: 0 10px;
+            margin-right: 10px;
+            line-height: 33px;
+            border: 1px solid #AAA;
+            cursor: pointer;
+        }
+        .tabBox div{
+            line-height: 148px;
+            text-align: center;
+            border: 1px solid #AAA;
+            display: none;
+        }
+        .tabBox div.fun{
+            display: block;
+        }
+        .tabBox ul li.fun{
+            border-bottom-color: #fff;
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="tabBox" id="tabBox">
+        <ul>
+            <li class="fun">新闻</li>
+            <li>电影</li>
+            <li>音乐</li>
+        </ul>
+        <div class="fun">武侠小说去世</div>
+        <div>黑人</div>
+        <div>让我们荡起双桨</div>
+    </div>
+</body>
+<script src="三元.js"></script>
+<canvas></canvas>
+</html>

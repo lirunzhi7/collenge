@@ -1,0 +1,86 @@
+.header{
+    height: 56px;
+    width: 100%;
+    position: absolute;
+}
+.header>h1{
+    background: black url(image/whiteLogo.png) no-repeat left top;
+    height: 37px;
+    width: 100px;
+    text-indent: 100px;
+    border: 1px solid red;
+    background-size:cover;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.top{
+    height: 762px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.top .header ul li{
+    float: right;
+ 
+}
+
+.top .banner ul{
+    width: 300%;
+    height: 762px;
+}
+.top .banner ul li{
+    width: 33.33%;
+    float: left;
+    height: 762px;
+    background: url(image/hero-bg-5.jpg) no-repeat center center;
+    background-size:cover;
+    /* padding-top: 650px; */
+}
+.top .banner ul li:nth-child(2){
+    background: url(image/hero-bg-7.jpg) no-repeat center center;
+    background-size:cover;
+}
+.top .banner ul li:nth-child(3){
+    background: url(image/hero-bg-8.jpg) no-repeat center center;
+    background-size:cover;
+}
+.body{
+    width: 100%;
+}
+.body ul li{
+    width: 25%;
+    float: left;
+    height: 260px;
+    border: 1px solid red;
+    box-sizing: border-box;
+    background: url(image/promo-01.jpg) no-repeat left top;
+    background-size:cover;
+    color: #fff;
+}
+.body ul li:nth-child(2){
+    background: url(image/promo-02.jpg) no-repeat left top;
+    background-size:cover;
+}
+.body ul li:nth-child(3){
+    background: url(image/promo-03.jpg) no-repeat left top;
+    background-size:cover;
+}
+.body ul li:nth-child(4){
+    background: url(image/promo-04.jpg) no-repeat left top;
+    background-size:cover;
+}
+@media all and (min-width:1080px){
+    .body ul li{
+        width: 25%;
+    }
+}
+@media all and (min-width:680px) and (max-width:1079px){
+    .body ul li{
+        width: 50%;
+    }
+}
+@media all and (max-width:679px){
+    .body ul li{
+        width: 100%;
+    }
+}

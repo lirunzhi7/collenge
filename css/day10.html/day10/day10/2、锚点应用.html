@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            height: 500px;
+            text-align: center;
+            line-height: 500px;
+            color: #fff;
+        }
+        .red{
+            background: red;
+        }
+        .green{
+            background: green;
+        }
+        .blue{
+            background: blue;
+        }
+        .black{
+            background: black;
+        }
+        .yellow{
+            background: yellow;
+        }
+        .sideMenu{
+            width: 100px;
+            position: fixed;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            background: purple;
+            text-align: center;
+        }
+        .sideMenu li{
+            line-height: 40px;
+            border-bottom: 1px solid #fff;
+        }
+        .sideMenu a{
+            text-decoration: none;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <ul class="sideMenu">
+        <li><a href="#red">红色</a></li>
+        <li><a href="#blue">蓝色</a></li>
+        <li><a href="#green">绿色</a></li>
+        <li><a href="#black">黑色</a></li>
+        <li><a href="#yellow">黄色</a></li>
+    </ul>
+    <div class="red" id="red">红色</div>
+    <div class="blue" id="blue">蓝色</div>
+    <div class="green" id="green">绿色</div>
+    <div class="black" id="black">黑色</div>
+    <div class="yellow" id="yellow">黄色</div>
+</body>
+</html>

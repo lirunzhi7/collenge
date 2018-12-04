@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .box{
+            width: 500px;
+            margin: 50px auto;
+        }
+        ul{
+            list-style: none;
+            position: relative;
+            top:1px;
+        }
+        ul li{
+            text-align: center;
+            border: 1px solid red;
+            display: inline-block;
+            cursor: pointer;
+            font-size: 20px;
+            padding:0 10px;
+        }
+        .box div{
+            line-height: 150px;
+            text-align: center;
+            border: 1px solid #AAA;
+            display: none;
+          
+        }
+        .box li.active{
+            border-bottom-color:#FFF;
+            color: blue;
+            
+        }
+        .box div.active{
+          display: block;
+          background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="box" class="box">
+        <ul>
+            <li class="active">新闻</li>
+            <li>音乐</li>
+            <li>电影</li>
+        </ul>
+        <div class="active">小宝恋爱了</div>
+        <div>沙漠骆驼</div>
+        <div>小宝sm</div>
+    </div>
+</body>
+<script src="js.js"></script>
+</html>
